@@ -243,3 +243,5 @@ let stringToNumber = function(str){
 }
 
 stringToNumber("1234");
+
+// 26
