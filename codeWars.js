@@ -238,3 +238,8 @@ let a = 123;
 a = a.toString();
 
 // 25
+let stringToNumber = function(str){
+	return Number(str)
+}
+
+stringToNumber("1234");
