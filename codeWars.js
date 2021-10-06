@@ -257,3 +257,12 @@ countSheeps([true,  true,  true,  false,
 	false, false, true,  true ])
 
 // 27
+function digitize(n) {
+	let newArr = n.toString().split("").reverse();
+	for (let i = 0; i < newArr.length; i++) {
+		newArr[i] = Number(newArr[i]);
+	}
+	return newArr
+}
+
+digitize(35231)
