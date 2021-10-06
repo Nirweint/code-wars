@@ -266,3 +266,5 @@ function digitize(n) {
 }
 
 digitize(35231)
+
+// 28
