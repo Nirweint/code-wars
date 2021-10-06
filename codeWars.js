@@ -267,4 +267,8 @@ function digitize(n) {
 
 digitize(35231)
 
+function digitizeK(n) {
+	return String(n).split('').map(Number).reverse()
+}
+
 // 28
