@@ -255,3 +255,5 @@ countSheeps([true,  true,  true,  false,
 	true,  false, false, true ,
 	true,  true,  true,  true ,
 	false, false, true,  true ])
+
+// 27
