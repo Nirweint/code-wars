@@ -298,3 +298,4 @@ function fakeBin(x){
 
 fakeBin('45385593107843568')
 
+// 30
