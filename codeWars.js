@@ -280,3 +280,5 @@ function feast(beast, dish) {
 		return false;
 	}
 }
+
+feast("sdsdsd", "dsdsdsd")
