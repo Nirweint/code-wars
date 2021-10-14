@@ -302,3 +302,11 @@ fakeBin('45385593107843568')
 x=()=>{}
 
 //  31
+
+function disemvowel(str) {
+	return str.replace(/[aeiou]/gi, '')
+  }
+
+  disemvowel("This website is for losers LOL!")
+
+  // 32
