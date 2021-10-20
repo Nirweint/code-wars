@@ -322,9 +322,3 @@ function countBy(x, n) {
 countBy(1,10)
 
 // 33 
-
-function isDigit(s) {
-	return !isNaN(Number(s))
-}
-
-isDigit("s2324")
