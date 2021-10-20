@@ -307,19 +307,24 @@ function disemvowel(str) {
 	return str.replace(/[aeiou]/gi, '')
   }
 
-  disemvowel("This website is for losers LOL!")
+disemvowel("This website is for losers LOL!")
 
-  // 32
+// 32
 
-  function countBy(x, n) {
+function countBy(x, n) {
 	let res = []
 	for(let i = 1; i <= n; i++) {
-	  res.push(x)
+		res.push(x)
 	}
 	return res.map((item,index) => item * (index + 1))
-  }
+}
 
-  countBy(1,10)
+countBy(1,10)
 
-  // 33 
-  
+// 33 
+
+function isDigit(s) {
+	return !isNaN(Number(s))
+}
+
+isDigit("s2324")
