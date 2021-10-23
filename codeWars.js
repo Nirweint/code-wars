@@ -322,3 +322,8 @@ function countBy(x, n) {
 countBy(1,10)
 
 // 33 
+String.prototype.digit = function() {
+  return /^\d$/.test(this);
+};
+
+// 34 
