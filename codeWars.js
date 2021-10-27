@@ -327,3 +327,11 @@ String.prototype.digit = function() {
 };
 
 // 34 
+function removeSmallest(numbers) {
+	let minIndex = numbers.indexOf(Math.min(...numbers))
+	return numbers.filter((item, index) => minIndex !== index)
+  }
+
+removeSmallest([1, 2, 3, 4, 5])
+
+// 35
