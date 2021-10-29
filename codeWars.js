@@ -352,3 +352,12 @@ function checkExam(array1, array2) {
    }
 
 checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"])
+
+// 36 
+function sumMix(x){
+	let arr = x.map(item => typeof item == 'string' ? Number(item) : item)
+	return arr.reduce((sum, current) => sum + current, 0)
+  }
+sumMix([9, 3, '7', '3'])
+
+// 37
