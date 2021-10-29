@@ -335,3 +335,20 @@ function removeSmallest(numbers) {
 removeSmallest([1, 2, 3, 4, 5])
 
 // 35
+function checkExam(array1, array2) {
+	let ans = 0;
+	for(let i = 0; i < array1.length; i++) {
+	 if(array1[i] === array2[i]) {
+	  ans += 4;
+	 }
+	 if(array1[i] !== array2[i] && array2[i] !== "") {
+	  ans -= 1;
+	 }
+	}
+	 if (ans < 0) {
+	   ans = 0;
+	   }
+	 return ans;
+   }
+
+checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"])
