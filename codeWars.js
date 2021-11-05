@@ -361,3 +361,17 @@ function sumMix(x){
 sumMix([9, 3, '7', '3'])
 
 // 37
+function rentalCarCost(d) {
+	let rent = d * 40;
+	if (d >= 7) {
+	  rent -= 50
+	}
+	if (d >= 3 && d < 7){
+	  rent -= 20
+	}
+	return rent
+  }
+
+rentalCarCost(7)
+
+// 38
