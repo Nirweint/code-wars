@@ -375,3 +375,12 @@ function rentalCarCost(d) {
 rentalCarCost(7)
 
 // 38
+var greet = function(name) {
+	let nameArr = name.toLowerCase().split('')
+	nameArr[0] = nameArr[0].toUpperCase()
+	return `Hello ${nameArr.join('')}!`
+  };
+
+greet('riley')
+
+// 39
