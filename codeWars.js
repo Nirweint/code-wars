@@ -400,3 +400,17 @@ function getSum( a,b ) {
 getSum(0,-1)
 
 // 40
+
+function accum(s) {
+	let array = s.toUpperCase().split("")
+  let newArr = array.map((item,index) => {
+    let itemString = '';
+    for (let i = 0; i < index; i++) {
+      itemString += item.toLowerCase()
+    }
+    return item = item + itemString
+  })
+  return newArr.join("-")
+}
+
+accum("ZpglnRxqenU")
