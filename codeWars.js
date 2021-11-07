@@ -414,3 +414,14 @@ function accum(s) {
 }
 
 accum("ZpglnRxqenU")
+
+// 41
+
+function isDigit(s) {
+	if (typeof s !== "string") return false
+	  return !isNaN(s) && !isNaN(parseFloat(s))
+}
+
+isDigit('22')
+
+// 42
