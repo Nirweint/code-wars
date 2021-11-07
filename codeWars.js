@@ -384,3 +384,19 @@ var greet = function(name) {
 greet('riley')
 
 // 39
+function getSum( a,b ) {
+	if (a > b) {
+	  [a,b] = [b,a]
+	}
+	let array = [];
+	for (a; a <= b; a++) {
+	  array.push(a)
+	}
+	return array.reduce((res, item) => {
+	  return res = res + item
+	},0);
+  }
+
+getSum(0,-1)
+
+// 40
