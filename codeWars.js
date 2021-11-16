@@ -425,3 +425,13 @@ function isDigit(s) {
 isDigit('22')
 
 // 42
+
+function findShort(s){
+	let wordsArray = s.split(" ")
+	const wordsLengthArray = wordsArray.map(item => item.length)
+	return Math.min(...wordsLengthArray)
+  }
+
+findShort("bitcoin take over the world maybe who knows perhaps")
+
+// 43 
