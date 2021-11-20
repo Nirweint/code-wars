@@ -435,3 +435,19 @@ function findShort(s){
 findShort("bitcoin take over the world maybe who knows perhaps")
 
 // 43 
+
+function longest(s1, s2) {
+	let str = s1 + s2;
+	let arr =  str.split("").sort((a,b) => a <= b ? -1 : 1)
+	let res = [];
+	arr.map(i => {
+	  if (!res.includes(i)) {
+		res.push(i)
+  }
+	})
+	return res.join("")
+  }
+
+longest("aretheyhere", "yestheyarehere")
+
+// 44 
