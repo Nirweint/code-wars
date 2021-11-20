@@ -451,3 +451,11 @@ function longest(s1, s2) {
 longest("aretheyhere", "yestheyarehere")
 
 // 44 
+function descendingOrder(n){
+	let array =  n.toString().split('').sort((a,b) => b-a)
+	return Number(array.reduce((acc,item) =>acc += item, ""))
+  }
+
+descendingOrder(123456789)
+
+// 45
