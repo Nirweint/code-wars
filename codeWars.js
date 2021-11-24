@@ -478,3 +478,11 @@ function firstNonConsecutive (arr) {
 firstNonConsecutive([1,2,3,4,6,7,8])
 
 // 46
+function maskify(cc) {
+	let newArr = cc.split('').map((i,index,arr) => arr.length - 4 > index ? i = '#' : i)
+	return newArr.join("")
+  }
+
+maskify('4556364607935616')
+
+// 47
