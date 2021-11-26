@@ -486,3 +486,10 @@ function maskify(cc) {
 maskify('4556364607935616')
 
 // 47
+function friend(friends){
+	return friends.filter(i => i.length === 4)
+  }
+
+friend(["Ryan", "Kieran", "Mark"])
+
+// 48
