@@ -493,3 +493,16 @@ function friend(friends){
 friend(["Ryan", "Kieran", "Mark"])
 
 // 48
+function dirReduc(arr){
+    let str = arr.join("")
+    let regEx = /NORTHSOUTH|EASTWEST|SOUTHNORTH|WESTEAST/g
+    while(regEx.test(str)) {
+        str = str.replace(regEx, '')
+    }
+
+    return str.match(/(NORTH|SOUTH|EAST|WEST)/g) || []
+}
+
+dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"])
+
+// 49
