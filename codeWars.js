@@ -506,3 +506,16 @@ function dirReduc(arr){
 dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"])
 
 // 49
+function solution(string) {
+	let str = string.split('')
+	  for(let i = 0; i < str.length; i++) {
+		if (/[A-Z]/.test(str[i])) {
+		  str[i] =" " + str[i]
+		}
+	  }
+	return str.join('')
+  }
+
+solution('camelCasingTest')
+
+// 50
