@@ -519,3 +519,19 @@ function solution(string) {
 solution('camelCasingTest')
 
 // 50
+function countInversions( array ){
+	let count = 0;
+	for (let j = 0; j < array.length - 1; j++) {
+	  for (let i = 0; i < array.length - 1 - j; i++) {
+		  if (array[i] > array[i + 1]) {
+			  [array[i], array[i + 1]] = [array[i + 1], array[i]]
+			count++
+		  }
+	  }
+  }
+	return count
+  }
+
+  countInversions([6,5,4,3,3,3,3,2,1])
+
+// 51
