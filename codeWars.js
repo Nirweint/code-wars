@@ -535,3 +535,24 @@ function countInversions( array ){
   countInversions([6,5,4,3,3,3,3,2,1])
 
 // 51
+function calculateAge(num1, num2) {
+    if (num1 < num2 && num2 - num1 === 1) {
+        return `You are ${num2 - num1} year old.`;
+    } else if (num1 < num2) {
+        return `You are ${num2 - num1} years old.`;
+    } else if (num1 > num2 && num1 - num2 === 1) {
+        return `You will be born in ${num1 - num2} year.`;
+    } else if (num1 > num2) {
+        return `You will be born in ${num1 - num2} years.`;
+    } else if (num1 > num2) {
+        return `You will be born in ${num1 - num2} year.`;
+    } else {
+        return "You were born this very year!";
+    }
+}
+  
+calculateAge(2000, 1999)
+
+// 52
+
+  
