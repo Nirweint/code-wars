@@ -555,4 +555,10 @@ calculateAge(2000, 1999)
 
 // 52
 
-  
+var gimme = function (inputArray) {
+	let arrCopy = [...inputArray]
+	arrCopy.sort((a,b) => a - b)
+	return inputArray.indexOf(arrCopy[1])
+  };
+
+gimme([1,2,3])
