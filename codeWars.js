@@ -562,3 +562,10 @@ var gimme = function (inputArray) {
   };
 
 gimme([1,2,3])
+
+// 53 
+function getEvenNumbers(numbersArray){
+	return numbersArray.filter(num => num % 2 === 0)
+  }
+
+// 54
