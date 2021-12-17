@@ -569,3 +569,26 @@ function getEvenNumbers(numbersArray){
   }
 
 // 54
+function balance(left, right) {
+    function calculate(str) {
+        return str.split("").reduce((acc, item) => {
+            if (item === "!") {
+                return (acc += 2);
+            } else {
+                return (acc += 3);
+            }
+        }, 0);
+    }
+
+    const leftWeight = calculate(left);
+    const rightWeight = calculate(right);
+    if (leftWeight > rightWeight) {
+        return "Left";
+    } else if (leftWeight < rightWeight) {
+        return "Right";
+    } else {
+        return "Balance";
+    }
+}
+
+// 55
