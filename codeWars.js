@@ -592,3 +592,8 @@ function balance(left, right) {
 }
 
 // 55
+function isPalindrome(x) {
+	return x.toLowerCase() === x.toLowerCase().split("").reverse().join("")
+  }
+
+// 56
