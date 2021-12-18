@@ -597,3 +597,21 @@ function isPalindrome(x) {
   }
 
 // 56
+function digital_root(n) {
+    if (n === 0) return n;
+    if (n.toString().split("").length > 1) {
+        sum = n
+            .toString()
+            .split("")
+            .map(Number)
+            .reduce((acc, current) => {
+                return acc + current;
+            }, 0);
+        digital_root(sum);
+    } else {
+        return sum;
+    }
+    return sum;
+}
+
+// 57
