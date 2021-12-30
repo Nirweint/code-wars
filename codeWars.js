@@ -627,4 +627,17 @@ function incrementer(nums) {
   }
 
 // 58
+function hamming(a,b) {
+	// Implement me!
+  let arrA = a.split("")
+  let arrB = b.split("")
+  let ans = 0;
+  for (let i = 0; i < arrA.length; i++) {
+    if (arrA[i] !== arrB[i]) {
+      ans++
+    }
+  }
+  return ans
+}
 
+// 59
