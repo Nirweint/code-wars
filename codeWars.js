@@ -615,3 +615,16 @@ function digital_root(n) {
 }
 
 // 57
+function incrementer(nums) { 
+	return nums.map((num, index) => {
+	let sumNum =  num + (index + 1)
+	if (sumNum >= 10) {
+	  let arr = sumNum.toString().split("")
+	  return sumNum = Number(arr[arr.length - 1])
+  }  
+	  return sumNum
+	})
+  }
+
+// 58
+
