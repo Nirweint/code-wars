@@ -641,3 +641,14 @@ function hamming(a,b) {
 }
 
 // 59
+function meeting(s) {
+    let upperArray = s.toUpperCase().split(";");
+    for (let i = 0; i < upperArray.length; i++) {
+        upperArray[i] = upperArray[i].split(":").reverse();
+    }
+    return upperArray.sort().reduce((acc, name) => {
+        return (acc += `(${name[0]}, ${name[1]})`);
+    }, "");
+}
+
+// 60
