@@ -661,3 +661,17 @@ function likes(names) {
   }
 
 // 61
+var uniqueInOrder = function (iterable) {
+    let res = [];
+    let arr;
+    Array.isArray(iterable) ? (arr = iterable) : (arr = iterable.split(""));
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== arr[i + 1]) {
+            res.push(arr[i]);
+        }
+    }
+    return res;
+};
+
+// 62
